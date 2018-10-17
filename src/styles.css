@@ -1,0 +1,59 @@
+@keyframes react-wm__anim-border {
+    from {
+        opacity: 1;
+    }
+    33% {
+        opacity: .25;
+        background-color: black;
+    }
+    66% {
+        opacity: .15;
+        background-color: white;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.react-wm__modal-mask {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .4);
+    /*background-color: darkorange;*/
+}
+
+.react-wm__snap-mask {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: transparent;
+    /*border: 1px solid yellow;*/
+    box-sizing: border-box;
+}
+
+.react-wm__overlay-grid {
+    background-color: transparent;
+    border: 1px dotted sandybrown;
+    transition: background-color .25s;
+}
+
+.react-wm__overlay-grid:hover {
+    background-color: rgba(255, 255, 255, .05);
+}
+
+.react-wm__border {
+}
+
+.react-wm__border:hover {
+    animation: react-wm__anim-border 1s infinite;
+}
+
+.react-wm__dragging-border {
+    box-sizing: border-box;
+    animation: react-wm__anim-border 1s infinite;
+}
